@@ -35,9 +35,12 @@ Test out putting data into GiffyGram API
 ```
 In the Postman app, change the `Post` to `Get`. We should see objects with an id.
 
-Test out putting a post into GiffyGram API. Refer to your ERD for all of the properties. 
+Test this out by adding multiple posts to your GiffyGram API. Refer to your ERD for all of the properties. 
 
 
 ### <h3 id="DJ-Practice"> Practice Journal API Calls</h3>
 * Through Postman, use `Post` to add additional entries to your Journal API
 * Through Postman, use `Get` to display all entries of your Journal API
+
+## Advanced Practice (optional)
+Once you have multiple users and posts in the GiffyGram API, try to `GET` only one user's posts. Take a look at the [json-server](https://github.com/typicode/json-server) documentation regarding filters.
