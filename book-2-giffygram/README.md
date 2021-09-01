@@ -30,7 +30,10 @@
 1. [Customer Report](./chapters/CUSTOMER_REPORT.md)
 
 ##
+# Book 2.5
 
+## Chapters
+  
 | # | Chapter | 📔 <br/> Practice/Daily Journal
 --- | --- | ---
 |<h4>*</h4> |Update LinkedIn | |
