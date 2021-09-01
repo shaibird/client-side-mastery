@@ -16,7 +16,7 @@
 |<h4>10</h4> |[User Actions: Event Listeners](chapters/47-GG-EventListeners.md) | <ul><li>[Add eventListeners to navBar icons](chapters/47-GG-EventListeners.md#Giffy-Practice)</li></ul>
 |<h4>11</h4> |[String Methods](chapters/47-GG-StringMethods.md) | <ul><li>[Add eventListeners post entry items](chapters/47-GG-StringMethods.md#Giffy-Practice)</li><br/><li>[Add eventListeners to journal entry buttons](chapters/47-GG-StringMethods.md#DJ-Practice)</li></ul>
 |<h4>12</h4> |[Filter Data Event](chapters/47-GG-Filter-Event.md) | <ul><li>[Filter Journal Entries](chapters/47-GG-Filter-Event.md#DJ-Practice)</li></ul>
-|<h4>13</h4> |[Create New Post](chapters/47-GG-CreatePost.md) | <ul><li>[Use a form to add journal entries](chapters/47-GG-CreatePost.md#DJ-Practrice)</li></ul>
+|<h4>13</h4> |[Create New Post](chapters/47-GG-CreatePost.md) | <ul><li>[Use a form to add journal entries](chapters/47-GG-CreatePost.md#DJ-Practice)</li></ul>
 |<h4>14</h4> |[Markdown for Readme's](chapters/Project-Readme.md) |<ul><li>Create a Readme for your group project</li><br /><li>Create a Readme for your Journal</li>
 |<h4>*</h4> |🚌 **Holiday Road**  |
 
