@@ -56,3 +56,15 @@ Supplementary chapters are for people who want to explore beyond what is covered
 
 * Topic of Interest - [Generator Functions](./chapters/JS_GENERATOR_FUNCTION.md)
 * Topic of Interest - [CSS Variables](./chapters/CSS_VARIABLES.md)                                                          
+
+## Group Project Challenge
+ 🏏 🍺 <br/>Truncheons &amp; Flagons
+ 1. [Application Requirements & Layout](./chapters/TF_STRUCTURE_LAYOUT.md)
+ 1. [Game Data](./chapters/TF_GAME_DATA.md)
+ 1. [Rendering Game Data](./chapters/TF_GAME_RENDER.md)
+ 1. [Truncheons &amp; Flagons API](./chapters/TF_API.md) 
+ 1. [Adding Teams](./chapters/TF_FORMS.md)
+ 1. [Leaderboard / Team List](./chapters/TF_LEADERBOARD_TEAMS.md) 
+ 1. [Adding Players](./chapters/TF_PLAYER_FORM.md)
+ 1. [Selecting Teams for Game](./chapters/TF_CHOOSE_TEAMS.md)
+ 1. [Recording Scores](./chapters/TF_ROUND_SCORES.md)
