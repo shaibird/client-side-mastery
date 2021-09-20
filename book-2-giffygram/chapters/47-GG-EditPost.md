@@ -37,7 +37,7 @@ export const updatePost = postObj => {
 
   })
       .then(response => response.json())
-      .then(getPosts)
+      
 }
 ```
 
