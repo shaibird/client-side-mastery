@@ -18,7 +18,7 @@ export const deletePost = postId => {
 
   })
       .then(response => response.json())
-      .then(getPosts)
+      
 }
 ```
 
