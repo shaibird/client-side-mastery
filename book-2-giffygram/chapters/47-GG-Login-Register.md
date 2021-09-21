@@ -58,8 +58,7 @@ Instead of immediately invoking `startGiffyGram`, we will want to check `session
 ```js
 const checkForUser = () => {
   if (sessionStorage.getItem("user")){
-    //this is expecting an object. Need to fix
-	  setLoggedInUser(JSON.parse(sessionStorage.getItem("user")));
+    setLoggedInUser(JSON.parse(sessionStorage.getItem("user")));
     startGiffyGram();
   }else {
     //show login/register
@@ -90,23 +89,22 @@ export const LoginForm = () => {
 	return `
 		<div class="newPost">
 		<h3>Login</h3>
-			<div>
-				<input value=""
-					name="name"
-					class="newPost__input"
-					type="text"
-					placeholder="User Name" />
-			</div>
-			<div>
-				<input value=""
-					name="email"
-					class="newPost__input"
-					type="text"
-					placeholder="name@place.com" />
-			</div>
-
-			<button id="login__submit">Login</button>
-			<button id="login__cancel">Cancel</button>
+      <div>
+        <input value=""
+          name="name"
+          class="newPost__input"
+          type="text"
+          placeholder="User Name" />
+      </div>
+      <div>
+        <input value=""
+          name="email"
+          class="newPost__input"
+          type="text"
+          placeholder="name@place.com" />
+      </div>
+        <button id="login__submit">Login</button>
+        <button id="login__cancel">Cancel</button>
 		</div>
 	`
 }
@@ -119,23 +117,22 @@ export const RegisterForm = () => {
 	return `
 		<div class="newPost">
 		<h3>Register</h3>
-			<div>
-				<input value=""
-					name="registerName"
-					class="newPost__input"
-					type="text"
-					placeholder="User Name" />
-			</div>
-			<div>
-				<input value=""
-					name="registerEmail"
-					class="newPost__input"
-					type="text"
-					placeholder="name@place.com" />
-			</div>
-
-			<button id="register__submit">Register</button>
-			<button id="login__cancel">Cancel</button>
+      <div>
+        <input value=""
+        name="registerName"
+        class="newPost__input"
+        type="text"
+        placeholder="User Name" />
+      </div>
+      <div>
+        <input value=""
+        name="registerEmail"
+        class="newPost__input"
+        type="text"
+        placeholder="name@place.com" />
+      </div>
+        <button id="register__submit">Register</button>
+        <button id="login__cancel">Cancel</button>
 		</div>
 	`
 }
@@ -305,20 +302,23 @@ applicationElement.addEventListener("click", event => {
   }
 })
 ```
-## <h3 id="Author-Practice">Practice - author name</h3>
+## Practice - author name
 Now that you have user information tied to each post, add an element to the `Post` displaying the author's name.
 
-##<h3 id="Edit-Practice"> Practice - author can edit</h3>
+## Practice - author can edit
 Using your mad javascript skills, only allow authors to edit their own posts. Refactor the `Post` to only display the edit and delete buttons if the post belongs to the logged in user. You will use a conditional statement.
 
-##<h3 id="JSON-Practice"> Practice - json-server filter</h3>
+## Practice - json-server filter
 As a code ninja, add a button to view only the logged in user's posts. Add a method to the DataManager to retrieve only the logged in user's posts. Refer to the [documentation for json-server](https://www.npmjs.com/package/json-server).
 
-## <h3 id="DJ-Practice">Practice </h3>
+## Journal Practice
 Your friends have asked if they can use your journal app. Include login and register functionality. You may also need to refactor the database calls to include a userId and only show posts related to the logged in user. Edits can only be made to the posts related to the user.
 
-### Bonus #1
-Allow users that are not logged in to have limited functionality like viewing other member's posts The ability to save a GiffyGram requires a login.
+### Bonus #1 
+When a user registers, ensure that the user is not already in the DB, no duplicates.
 
 ### Bonus #2
+Allow users that are not logged in to have limited functionality like viewing public posts. and when they try to save a post, require a login.
+
+### Bonus #4
 Refactor the login and register components into one form. If a user is not found, automatically register the user and display the app.
