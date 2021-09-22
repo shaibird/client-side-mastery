@@ -105,7 +105,7 @@ First we need to add a table to the DB for `userLikes`. Each entry in this table
 ```json
 "userLikes": [
     {
-      "postId": "6",
+      "postId": 6,
       "userId": 1,
       "id": 1
     }
