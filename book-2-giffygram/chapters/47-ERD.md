@@ -156,7 +156,7 @@ export const postLike = likeObject => {
 		body: JSON.stringify(likeObject)
 	})
 		.then(response => response.json())
-		.then(getPosts)
+		
 }
 ```
 
