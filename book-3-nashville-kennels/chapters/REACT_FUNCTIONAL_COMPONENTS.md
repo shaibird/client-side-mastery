@@ -162,6 +162,10 @@ strong {
 address {
   margin: 0 0 1.5em;
 }
+
+.container-cards {
+	display: flex;
+}
 ```
 
 ## Animal Styles

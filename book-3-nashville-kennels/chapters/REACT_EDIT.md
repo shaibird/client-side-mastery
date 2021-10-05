@@ -24,8 +24,9 @@ Here is the flow of the AnimalEditForm component:
 
 ```jsx
 import React, { useState, useEffect } from "react"
-import AnimalManager from "../../modules/AnimalManager"
+import { update, getAnimalById } from "../../modules/AnimalManager"
 import "./AnimalForm.css"
+import { useParams, useHistory } from "react-router-dom"
 
 export const AnimalEditForm = () => {
   const [animal, setAnimal] = useState({ name: "", breed: "" });
@@ -44,13 +45,17 @@ export const AnimalEditForm = () => {
     evt.preventDefault()
     setIsLoading(true);
 
-    // This is an edit, so we need the id
+    // default values for locationId and customerId
+    // if you already have these components/modules in place, you will need to include the correct information
     const editedAnimal = {
-      id: props.match.params.animalId,
+      id: animalId,
       name: animal.name,
-      breed: animal.breed
+      breed: animal.breed,
+	    locationId: 1,
+	    customerId: 1
     };
 
+  //pass the editedAnimal object to the database
   AnimalManager.update(editedAnimal)
     .then(() => history.push("/animals")
     )
@@ -89,6 +94,7 @@ export const AnimalEditForm = () => {
             />
             <label htmlFor="breed">Breed</label>
           </div>
+          {/* Be sure to include location and customer */}
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}
@@ -110,11 +116,7 @@ Next, define a new route in **`<ApplicationViews>`** for editing a single animal
 
 ```jsx
 <Route path="/animals/:animalId(\d+)/edit">
-    if (isAuthenticated()) {
-      return <AnimalEditForm />
-    } else {
-      return <Redirect to="/login" />
-  }
+     {isAuthenticated ? <AnimalEditForm /> : <Redirect to="/login" />}
 </Route>
 ```
 
@@ -122,11 +124,7 @@ You will also need to add `exact` to the route for `AnimalDetail`
 
 ```jsx
 <Route exact path="/animals/:animalId(\d+)">
-  if (isAuthenticated()) {
-    return <AnimalDetail />
-  } else {
-    return <Redirect to="/login" />
-  }
+  {isAuthenticated ? <AnimalDetail /> : <Redirect to="/login" />}
 </Route>
 ```
 
@@ -139,10 +137,9 @@ At this point you should be able to see the edit animal form with a URL like thi
 In the **`<AnimalCard>`** component, you will add a new button: `Edit`. When the user clicks the button, the route should change to `/animals/:animalId/edit`.
 
 ```jsx
-<button type="button"
-  onClick={() => history.push(`/animals/${animal.id}/edit`)}>
-  Edit
-</button>
+  <Link to={`/animals/${animal.id}/edit`}>
+    <button>Edit</button>
+  </Link>
 ```
 
 ![edit animal button](./images/animals-with-edit-button.png)
@@ -150,15 +147,6 @@ In the **`<AnimalCard>`** component, you will add a new button: `Edit`. When the
 At this point, view an AnimalCard. You should see the `Edit` button. Test it out.
 
 Oh no, **Error**. `TypeError: Cannot read property 'push' of undefined`. What is that? We need to import and `useHistory` from `react-router-dom` into the AnimalCard.
-
-> AnimalCard.js
-
-```js
-const history = useHistory();
-```
-
-
-Test again. You should be able to navigate to the animal edit view.
 
 > **NOTE:** It _still_ won't fully work yet...but we're close...
 
@@ -169,14 +157,14 @@ Test again. You should be able to navigate to the animal edit view.
 Finally, define a method in your `AnimalManager` for the update fetch call. You will use PUT in the HTTP request. This method will take the updated animal as an object and save to the database.
 
 ```js
-update(editedAnimal) {
-  return fetch(`${remoteURL}/animals/${editedAnimal.id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(editedAnimal)
-  }).then(data => data.json());
+export const update = (animalObj) => {
+	return fetch(`${remoteURL}/animals/${animalObj.id}`, {
+		method: "PUT",
+		headers: {
+			"Content-Type": "application/json"
+		},
+		body: JSON.stringify(animalObj)
+	}).then(data => data.json());
 }
 ```
 
