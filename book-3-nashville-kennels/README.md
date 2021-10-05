@@ -22,6 +22,7 @@ In this book, you will be learning the concepts and tools of React. React is a c
 16 |[React: Logout on Navbar Functionality](./chapters/REACT_LOGOUT_NAVBAR.md) | |
 17 | Sprint 3: Reactive Nutshell | |
 18 | Update LinkedIn Projects with Reactive Nutshell | | 
+19 | [**Bonus:** export default](./chapters/REACT_EXPORT_DEFAULT.md)  | | 
 ##
 
 
