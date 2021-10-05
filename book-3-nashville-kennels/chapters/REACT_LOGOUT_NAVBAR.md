@@ -50,7 +50,7 @@ export const Kennel = () => {
 
 ## Refactor NavBar Component
 
-When a user clicks on `logout`, we want to clear the user and direct to the home view. We can use react-router-dom's `history.push` method. Since **`<NavBar>`** is NOT part of a route, we will need to export it `withRouter`, which gives us access to the router props (history, location, and match).
+When a user clicks on `logout`, we want to clear the user and direct to the home view. We can use react-router-dom's `history.push` method.
 
 Since we are going to perform two steps, it makes sense to create a `handleLogout` method that is triggered when the logout button is clicked.
 
@@ -76,24 +76,18 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
             <li className="navbar__item">
                 <Link className="navbar__link" to="/"> Home </Link>
             </li>
-            {isAuthenticated
-                ? <li className="navbar__item">
+            {isAuthenticated && <li className="navbar__item">
                     <Link className="navbar__link" to="/animals"> Animals </Link>
-                </li>
-                : null}
+                </li>}
             <li className="navbar__item">
                 <Link className="navbar__link" to="/locations"> Locations </Link>
             </li>
-            {isAuthenticated
-                ? <li className="navbar__item">
+            {isAuthenticated && <li className="navbar__item">
                     <Link className="navbar__link" to="/employees"> Employees </Link>
-                </li>
-                : null}
-            {isAuthenticated
-                ? <li className="navbar__item">
+                </li>}
+            {isAuthenticated && <li className="navbar__item">
                     <Link className="navbar__link" to="/owners"> Owners </Link>
-                </li>
-                : null}
+                </li>} 
             {isAuthenticated
                 ? <li className="navbar__item">
                     <span className="navbar__link" onClick={handleLogout}> Logout </span>
