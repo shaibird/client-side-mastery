@@ -16,13 +16,13 @@ The checklist below is for you. You will use it during the practice exercise, an
 
 > **Tip:** The curly braces below should not be typed by you. They indicate where to place your own value.
 
-Everyone will create a fish for the aquarium website.
+Everyone will create a component for a web page (fish, dessert, etc).
 1. Everyone clone the same repository
 1. Each person create a branch
     ```sh
     git checkout -b {your initials}-fish
     ```
-1. Add your fish component to the HTML
+1. Add a fish component to the HTML
 1. Check status of your branch
 ```sh
     git status
@@ -37,16 +37,16 @@ Everyone will create a fish for the aquarium website.
 1. Teammate decides to verify your PR and fetches your branch
     ```sh
     git fetch --all
-    git checkout {your initials}-fish
+    git checkout branch-name-goes-here
     ```
 1. Teammate runs code in browser to verify it works
 1. Teammate approves PR by giving you a thumbs up 👍
 1. Your merge your branch on Github by visiting your Pull Request page and clicking the big, green button.
-1. Teammates pull `main` when they feel like it but before they submit their PR
+1. Teammates may pull `main` when they feel like it but always before they submit their own PR
     ```sh
     git checkout main
     git pull origin main
-    git checkout {their initials}-fish
+    git checkout your-branch-name
     ```
 1. When another teammate is ready to submit a pull request, they merge main into their branch, and push.
     ```sh

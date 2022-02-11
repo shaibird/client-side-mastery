@@ -2,7 +2,7 @@
 
 ## Why Are You Learning This?
 
-Thinking about apps and web pages as a collection of independent components is the foundation of modern web applications. Consider Snapchat, Instagram, Twitter, Facebook, Etsy, or Pinterest. All of these applications are written by teams of software developers who define individual components that are used throughout the application. They then write each component separately and then compose them in interesting ways to make them work together.
+Thinking about apps and web pages as a collection of independent components is the foundation of modern web applications. Consider Snapchat, Instagram, Twitter, Facebook, Etsy, or Pinterest. All of these applications are written by teams of software developers who define individual components that are used throughout the application. They then write each component separately and compose them in interesting ways to make them work together.
 
 ## Vocabulary To Learn
 * HTML semantic elements
@@ -78,11 +78,11 @@ If you were creating an HTML component that represents you, here's an example of
 </main>
 ```
 
-Each component can be styled individually with a clear, concise name that also provides some context when looking at the CSS file. Before writing custom styles, the browser applies default styling.
+Each component can be styled individually with a clear, concise name that also provides some context when looking at the CSS file. Before writing custom styles, notice the browser applies default styling.
 
 ![](./images/sally-html-only.png)
 
-Now you can target specific elements and apply style.
+Now you can target specific elements and apply custom styles.
 
 ```css
 .bio__interests ul{
@@ -104,11 +104,11 @@ Now you can target specific elements and apply style.
 
 ## Grid Layout with Flexbox
 
-Flexbox is a tool that you can use in CSS to take the structure of your HTML and apply interesting layouts for it. One of the most common layout type is a grid, and it's straightforward to do with Flex.
+Flexbox is a tool that you can use in CSS to apply layout to the HTML. One of the most common layout type is a grid, and it's straightforward to do with Flexbox.
 
-Unfortunately, these Flexbox properties are hard to remember, so you should come back to this chapter and review them whenever you need to use Flexbox to make a grid layout.
+There are many Flexbox properties and CSS-Tricks provides a great guide for use: [A Complete Guide To Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-You want those three interest to be all in the same row instead of each one being an entire row all by itself. The first thing you need to do is apply a style to the component in which all of those interests are contained. In your case, it's the `<section class="bio__interests">` component.
+With Sally's Interests, you want them to be all in the same row (instead of stacking). The first thing you need to do is apply a style to the component in which all of those interests are contained. In your case, it's the `<section class="bio__interests">` component.
 
 ```css
 .bio__interests ul{
@@ -222,16 +222,19 @@ Use the above HTML and Flexbox to achieve the following layout. You don't need t
 
 ![flexbox layout](./images/coffeehouses-flexbox.png)
 
+* Once you complete this part, create a repo on GitHub and push your project.
+
 #### Part 2 - Creating visual hierarchies
 
 1. Add a tagline, address, phone number, website link, and menu link to each coffee house (you may use mock/fake data).
 1. Each coffee house component should utilize Flexbox for the layout.
-1. Use semantic HTML with CSS to style each coffee house component with the goal of easy scannability by the user. At a minimum, you will emphasize the name of each shop and make the links clearly clickable.
+1. Use semantic HTML with CSS to style each coffee house component with the goal of easy scan-ability by the user. At a minimum, you will emphasize the name of each shop and make the links clearly clickable.
 
 Example layout for one shop (don't forget the additional information)
 
 ![example layout](images/coffee-shop-layout.png)
 
+Once you complete this part, push your project to GitHub.
 
 ## Practice: Congressional Representative
 #### Part 1
@@ -254,11 +257,13 @@ You're going to create an HTML component to represent a political candidate. Spe
 
 Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is.
 
+Once you complete this part, push your project to GitHub.
+
 
 #### Part 2
 > User Interface: Web pages should be designed in such a way that they are easy to scan.
 
-How to improve scannability?
+How to improve scan-ability?
 * Create visual hierarchies: What is the most important information on the page? What is supportive information? Can you use bulleted lists?
 * Use universally accepted conventions: These may include placement of logo/tagline, buttons/links colors, or positioning of social networking options, etc.
 * Break the page into clearly defined sections.
@@ -268,10 +273,12 @@ How to improve scannability?
 
 1. Text with background color/image - ensure the copy (text color) has good contrast and is legible. Included with Chrome Dev Tools is an Audit panel. Run an Audit on the page and determine if the text color has appropriate contrast. More information: https://developer.chrome.com/docs/devtools/accessibility/reference/
 
+Once you complete this part, push your project to GitHub.
+
 
 ## Coffee Houses Text and Background Colors
 **This is an optional challenge**
 
-Review your background color/image and ensure the copy (text color) has good contrast and is legible. Research and then employ the Chrome Dev Tools to inspect your color choices. 
+Review your background color/image and ensure the copy (text color) has good contrast and is legible. Use the Chrome Dev Tools to inspect your color choices. Research the AA and AAA rating and make adjustments to your project.
 
 ![dev tools](./images/devtools-contrast.png)

@@ -35,7 +35,7 @@ First configure git to use `main` as the default branch name.
 git config --global init.defaultBranch main
 ```
 
-Second, tell git who you are. You'll need to set a name and email in your global git `config` file. This makes it easy to know who committed changes!
+Second, tell git who you are. You'll need to set a name and email in your global git `config` file. This makes it easy to know who committed code!
 
 ![username and email](./images/git-username-email.png)
 
@@ -71,7 +71,9 @@ The magic is the `.git` directory that gets created when the `git init` command 
 
 > **Special Note** Most often you will want to ignore certain files within a directory and not track them with git. This can be accomplished by creating a .gitignore file and listing the items that should not be tracked. For example, anyone working with a Mac or collaborating with Mac users should ignore a file called `.DS_Store`.
 
-> 👉 **Mac Users** Make a global .gitignore file and let git know that you want to use this file for all of your repositories
+> Create a `.gitignore` file. Put `.DS_Store` in the contents. 
+
+> 👉 **Mac Users** Make a global .gitignore file and let `git` know you want to use this file for all of your repositories
 
 ```sh
 echo .DS_Store >> ~/.gitignore_global
@@ -127,7 +129,7 @@ Now create a Github repository where you will upload your code.
 
 ## Back-Up and Share Code on Github
 
-Github is a _software as a service_ (SAAS) that allows you to back-up your repository to the cloud and share it with other software developers. Note that it is not the same thing as git, which is an application you are running locally on your machine. Github and git are made to talk to each other, but they are separate entities.
+Github is a _software as a service_ (SAAS) that allows you to back-up your repository to the cloud and share it with other software developers. Note that it is not the same thing as `git`, which is an application you are running locally on your machine. Github and git are made to talk to each other, but they are separate entities.
 
 ## Push to Github
 

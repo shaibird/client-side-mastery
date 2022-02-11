@@ -4,9 +4,6 @@
 
 | # | 🚙 | 📔 <br/> Daily Journal |
 |--|--|---|
-| 🍎 | [Installations for Mac](./chapters/GETTING_STARTED_MAC.md) | |
-| 💻 | [Python Cohorts: Installations for Windows](./chapters/GETTING_STARTED_WINDOWS.md) |  |
-| 💻 | [C# Cohorts: Installations for Windows](./chapters/GETTING_STARTED_WINDOWS_C_SHARP.md) |  |
 | 1 | [Terminal Basics](./chapters/CLI_BASICS.md) <br/> <sub style="font-size:0.85rem;">#terminal</sub> |  |
 | 2 | [HTML Layout and Components](./chapters/HTML_LAYOUT_COMPONENTS.md) <br/> <sub style="font-size:0.85rem;">#bem #html #flexbox</sub> | [Wireframes](./chapters/DAILY_JOURNAL_WIREFRAME.md) |
 | 3 | [Git and GitHub: Version Control](./chapters/GIT_BASICS.md) <br/> <sub style="font-size:0.85rem;">#git #github</sub> |  |

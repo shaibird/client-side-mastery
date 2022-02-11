@@ -23,21 +23,19 @@ Becoming comfortable with your terminal will make you a master of the computer.
 1. [The Most Important Thing You'll Learn in the Command Line](https://www.youtube.com/watch?v=q7-aEspwwEI)
 1. [Shell Scripting Tutorial](https://www.youtube.com/watch?v=hwrnmQumtPw)
 
-## Practice: Martin's Aquarium Directory &amp; Files
+## Practice: Yellow Brick Code Directory &amp; Files
 
-Before you start writing code for any application, you want to set up the directory structure, and create some initial files, on the file system first. One of our first projects is to build a web page to track the inventory of a rare fish aquarium.
-
-You can watch the [Martin's Aquarium Directories and Files](https://www.youtube.com/watch?v=ogHzpf4Kelk) video that will also show you the basic terminal commands to use for this.
+Before you start writing code for any application, you want to set up the directory structure, and create some initial files. One of our first projects is to build a web page for Yellow Brick Code.
 
 All of the work you will be doing at NSS will be contained in the `~/workspace` directory. Inside of the `workspace` directory, you need to create an `martins-aquarium` subdirectory.
 
 ```sh
 {home directory}
     +-- workspace
-        +-- martins-aquarium
+        +-- yellow-brick-code
 ```
 
-Once the directory is created, you need to create the HTML file and the CSS file. The standard name for the initial HTML for any web site is `index.html`. Go ahead and `cd` into the `~/workspace/martins-aquarium` directory and within, create the file with the following command.
+Once the directory is created, you will need to create the HTML file and the CSS file. The standard name for the initial HTML for any web site is `index.html`. Go ahead and `cd` into the `~/workspace/yellow-brick-code` directory and within, create the file with the following command.
 
 ```sh
 touch index.html
@@ -46,6 +44,8 @@ touch index.html
 Next, create a `styles` subdirectory and within, create a file named `main.css`.
 
 Use `cd ..` to go up one directory level. Create another subdirectory named `scripts` and within, create a file named `main.js`.
+
+Use `cd ..` to go up one directory level and create another subdirectory names `images`.
 
 ## Challenge: Creating Content in a File
 
