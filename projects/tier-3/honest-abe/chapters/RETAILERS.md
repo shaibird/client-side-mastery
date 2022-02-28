@@ -23,4 +23,4 @@ Add this resource to your database and create at least 5 flower shops.
 
 ### HTML Representations
 
-Create your data provider, your list component and your individual item component. Then display a list of all retailers in your database.
+Create your database, your list component and, optionally, an individual item component. Then display a list of all retailers in your database.
