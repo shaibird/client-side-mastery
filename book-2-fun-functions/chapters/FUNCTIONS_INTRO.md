@@ -117,7 +117,7 @@ You have some starter code provided. It's a blank function that defines the task
 
 ```js
 const fillGasTank = () => {
-    console.log(`I filled the tank with ${gallons} of gas`)
+    console.log(`I filled the tank with ${gallons} gallons of gas`)
 }
 
 fillGasTank(15)
