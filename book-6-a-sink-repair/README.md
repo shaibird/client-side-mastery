@@ -15,7 +15,7 @@ In this book, you will be introduced to the basics of asynchronous programming a
 | 7 | [Updating Service Request List](./chapters/AS_HTTP_GET.md) <br/> <sub style="font-size:0.85rem;">#fetch #GET #state</sub> | [Buttons' Schedule](./chapters/BC_SCHEDULE_LIST.md) |
 | 8 | [Denying Service Requests](./chapters/AS_HTTP_DELETE.md) <br/> <sub style="font-size:0.85rem;">#JSON #fetch #DELETE</sub> | [Rejected by Buttons](./chapters/BC_DENY_RESERVATION.md) |
 | 9 | [Completing Service Requests](./chapters/AS_COMPLETIONS.md)<br/> <sub style="font-size:0.85rem;">#fetch #then-chaining | [The Party is Over](./chapters/BC_PERFORMANCE_COMPLETE.md) |
-| 🎓 | [Self-assessment](./chapters/BOOK_5_ASSESSMENT.md) |  |
+| 🎓 | [Self-assessment](./chapters/BOOK_6_ASSESSMENT.md) |  |
 
 ## 🧭 Explorer Chapters
 

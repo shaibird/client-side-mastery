@@ -56,6 +56,40 @@ This project will help you assess your ability to apply the JavaScript skills th
 * date sent
 * email address of author/recipient
 * topic of letter
+* content of the letter
+
+## The Data
+
+Below is a description of the different states to be tracked and represented in your application. You will decide on what the key names are for each piece of state and what the data types should be.
+
+### Pen Pals
+
+You need a collection of objects that represent the people who are in the Pen Pal Society. Each pen pal must have the following properties.
+
+* primary key
+* full name
+* email address
+
+### Letters
+
+You need a collection of objects that represent the letters that the members of the Pen Pal Society send to each other. Properties of the letter are.
+
+* primary key
+* letter body
+* who sent it
+* who received it
+* date sent
+
+### Topics
+
+You need a collection of objects that represent the topics that can be assigned to each letter.
+
+* primary key
+* label of the topic
+
+### ERD
+
+Before you write any code, or build your `database.json` file for your API service, build an ERD that visualizes the data () and the relationships between each resource.
 
 ## Deep Learning
 
@@ -90,3 +124,5 @@ Think you have a strong understanding of asynchronous operations using `fetch()`
 * date sent
 * email address of author/recipient
 * all topics chosen
+
+How does this change the data relationships? How should you update your ERD -- and the corresponding resources in your databse -- to reflect this change?
