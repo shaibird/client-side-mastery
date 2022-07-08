@@ -79,7 +79,7 @@ export const ApplicationViews = () => {
 }
 ```
 
-Now you can use your Dev Tools to see the message in the console, and view the initial state of your component.
+Now you're ready to take a look at your work rendered in the browser. Notice that the app defaults to the login page, with a user's email already in the form input. Just click 'sign in' and you'll be shown the nav bar. Click "Tickets" to display the TicketList component. Now you can use your Dev Tools to see the message in the console, and view the initial state of your component.
 
 ![animation showing the dev tools to inspect state of the ticket list component](./images/honey-rae-initial-state-dev-tools.gif)
 
