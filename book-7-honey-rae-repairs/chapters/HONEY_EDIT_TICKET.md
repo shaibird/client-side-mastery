@@ -29,7 +29,7 @@ Update **`TicketList`** JSX so that the ticket id is in the header, and is a `<L
 
 ```html
 <header>
-    <Link to={`/tickets/${}/edit`}>Ticket {ticket.id}</Link>
+    <Link to={`/tickets/${ticket.id}/edit`}>Ticket {ticket.id}</Link>
 </header>
 <section>{ticket.description}</section>
 <footer>Emergency: {ticket.emergency ? "🧨" : "No"}</footer>
