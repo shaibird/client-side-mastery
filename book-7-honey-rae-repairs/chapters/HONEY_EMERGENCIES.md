@@ -22,6 +22,10 @@ This section shows you how to use use ternary statements to conditionally show R
 
 Watch the [Emergency Button Only For Employees](https://watch.screencastify.com/v/2Z8UeVBNWGTdxja23Un1) video and then implement the code yourself.
 
+| Time | Concept |
+| --- | ----------- |
+| 0:50 | Render JSX to show element based on logged in user |
+
 ## Allow Employee to Switch Back
 
 This section shows you how to add another button to allow an employee to show **all** tickets again after the list has been filtered down to emergency tickets.
