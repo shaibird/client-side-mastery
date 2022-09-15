@@ -21,3 +21,10 @@ Watch the [Fetch Initial Ticket State](https://watch.screencastify.com/v/F4ZpSuh
 This section shows you how to `import` CSS files into your component.
 
 Watch the [Ticket Styling](https://watch.screencastify.com/v/C9ooO9RYkoIzzhj90kqx) video and then implement the code yourself.
+
+## Key Concept Clips
+
+| Time | Concept |
+| --- | ----------- |
+| 0:27 | Component based styling |
+| 0:57 | Importing css into react component |
