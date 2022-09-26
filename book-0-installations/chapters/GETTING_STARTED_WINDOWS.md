@@ -17,6 +17,8 @@ This process will install a new operating system _inside_ your Windows operating
     wsl --install -d ubuntu
     ```
 
+> **IMPORTANT:** It is very important that you remember both the username and password that you create in the next step. If you need to write them down to remember them, that's a great strategy.
+
 1. After the installation is done, a new window will come up and you will be prompted for your username and password. Your password won't appear as you type it. That's normal.
 1. Keep this window open for now.
 
@@ -62,9 +64,7 @@ Once Windows Terminal is installed:
 
     > _Ubuntu will begin to install and you'll be asked to wait for a minute or two for the installation to complete._
     >
-    > **IMPORTANT:** It is very important that you remember both the username and password that you create in the next step. If you need to write them down to remember them, that's a great strategy.
 
-1. Once Ubuntu is done installing, you'll be prompted to create a new user (and its password).
 
 <br/>
 <br/>
