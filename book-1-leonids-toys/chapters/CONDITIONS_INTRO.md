@@ -1,6 +1,6 @@
 ## Fast Food
 
-If you have ever had the pleasure of working in a fast food restaurant, you remember how important automation and repitition is. There is very little variation to the food offerings, and there are machines and processes set up to ensure that each product is produced in the same amount of time, with the exact same quantity of ingredients, in the exact same amount of time.
+If you have ever had the pleasure of working in a fast food restaurant, you remember how important automation and repetition is. There is very little variation to the food offerings, and there are machines and processes set up to ensure that each product is produced in the same amount of time, with the exact same quantity of ingredients, in the exact same amount of time.
 
 In this exercise, you are going to use the same processes as in the last chapter, but you are going to introduce an `if/else` code block inside the `for` loop. You will still have two arrays. The first contains the raw ingredients for food, and you will be using the `.push()` method to add the finished food product to the other array. However, what value gets inserted into the new array will depend on what the raw ingredient is.
 
